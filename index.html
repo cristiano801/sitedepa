@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Publicidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho Superior -->
+    <header class="top-header">
+        <div class="site-name">
+            <h1>FLARE</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="free-shopping">
+            <i class="fas fa-truck"></i> Free Shopping
+        </div>
+        <div class="contact-info">
+            <span><a href="mailto:contato@site.com">Email: contato@site.com</a></span>
+            <span><a href="tel:+946419129">Telefone: +244 946 419 129</a></span>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav class="main-nav">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#"><i class="fas fa-bars"></i> Todas as Categorias</a>
+                <ul class="dropdown">
+                    <li><a href="#">Subcategoria 1</a></li>
+                    <li><a href="#">Subcategoria 2</a></li>
+                    <li><a href="#">Subcategoria 3</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="media.html"><i class="fas fa-photo-video"></i> Média</a></li>
+            <li><a href="shortcode.html"><i class="fas fa-code"></i> Shortcode</a></li>
+            <li><a href="faturas.html"><i class="fas fa-file-invoice"></i> Faturas</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+            <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contato</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="carrinho.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            <a href="minhaconta.html"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-heart"></i> <span class="wishlist-count">0</span></a>
+        </div>
+    </nav>
+
+    <!-- Seção de Produtos -->
+    <section class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-lista">
+            <div class="produto">
+                <img src="assets/images/produto1.jpg" alt="Produto 1">
+                <h3>Produto</h3>
+                <p>Empresa A</p>
+                <p>R$ 100,00</p>
+                <div class="estrelas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="assets/images/produto2.jpg" alt="Produto 2">
+                <h3>Produto</h3>
+                <p>Empresa B</p>
+                <p>R$ 200,00</p>
+                <div class="estrelas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <!-- Adicione mais produtos aqui -->
+        </div>
+    </section>
+
+    <!-- Seção de Mensagens sobre a Empresa -->
+    <section class="sobre-empresa">
+        <div class="sobre-conteudo">
+            <h2>Sobre a FLARE</h2>
+            <p>
+                A FLARE é uma empresa dedicada a oferecer os melhores produtos e serviços para nossos clientes. 
+                Fundada em 2024, nossa missão é proporcionar uma experiência de compra única, com qualidade, 
+                praticidade e preços acessíveis.
+            </p>
+            <p>
+                Nossos valores incluem transparência, inovação e compromisso com a satisfação do cliente. 
+                Acreditamos que cada produto que oferecemos deve refletir a excelência e a dedicação que 
+                colocamos em tudo o que fazemos.
+            </p>
+            <p>
+                Explore nossa loja e descubra por que a FLARE é a escolha certa para você. Estamos aqui para 
+                ajudar você a encontrar exatamente o que precisa.
+            </p>
+        </div>
+        <div class="sobre-imagem">
+            <img src="assets/images/sobre-empresa.jpg" alt="Sobre a FLARE">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="about.html">Sobre Nós</a>
+            <a href="contacto.html">Contato</a>
+            <a href="politica.html">Política de Privacidade</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 FLARE. Todos os direitos reservados.</p>
+        <p>Contato: <a href="tel:+946419129">+244 946 419 129</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Menu Mobile
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Contador de Carrinho e Favoritos
+        let cartCount = 0;
+        let wishlistCount = 0;
+
+        document.querySelectorAll('.btn-comprar').forEach(button => {
+            button.addEventListener('click', () => {
+                cartCount++;
+                document.querySelector('.cart-count').textContent = cartCount;
+            });
+        });
+
+        document.querySelector('.fa-heart').addEventListener('click', () => {
+            wishlistCount++;
+            document.querySelector('.wishlist-count').textContent = wishlistCount;
+        });
+    </script>
+</body>
+</html>

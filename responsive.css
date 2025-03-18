@@ -1,0 +1,178 @@
+/* Responsividade para Telas Menores */
+@media (max-width: 768px) {
+    /* Cabeçalho Superior */
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        transition: padding 0.3s ease;
+    }
+
+    .site-name h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .search-bar input {
+        width: 80%; /* Aumenta a largura da barra de pesquisa */
+    }
+
+    .free-shopping {
+        margin: 10px 0;
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    .contact-info {
+        text-align: left;
+        margin-top: 10px;
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    .contact-info span {
+        display: block; /* Coloca cada informação em uma linha */
+        margin: 5px 0;
+    }
+
+    /* Menu de Navegação */
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, height 0.3s ease;
+    }
+
+    .nav-links.show {
+        opacity: 1;
+        height: auto; /* Exibe o menu ao ativar */
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .nav-links li a {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    .nav-icons {
+        margin-top: 10px;
+        display: flex;
+        gap: 15px; /* Espaçamento entre ícones */
+    }
+
+    .nav-icons a {
+        font-size: 1.2rem; /* Ajusta o tamanho dos ícones */
+    }
+
+    .menu-toggle {
+        display: flex; /* Exibe o botão de menu (hambúrguer) */
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .menu-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 4px 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Seção de Produtos */
+    .produtos {
+        padding: 10px;
+    }
+
+    .produtos h2 {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    .produtos-lista {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        gap: 10px;
+    }
+
+    .produto {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .produto:hover {
+        transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+    }
+
+    .produto img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .produto h3 {
+        font-size: 1.2rem; /* Reduz o tamanho do título do produto */
+    }
+
+    .produto p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    .estrelas {
+        font-size: 0.9rem; /* Reduz o tamanho das estrelas */
+    }
+
+    .btn-comprar {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.9rem; /* Reduz o tamanho do botão */
+    }
+
+    /* Rodapé */
+    .footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    .social-media {
+        margin: 10px 0;
+    }
+
+    .social-media a {
+        font-size: 1.2rem; /* Ajusta o tamanho dos ícones */
+    }
+
+    .footer p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+}

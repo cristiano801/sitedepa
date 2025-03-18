@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Conta - Site de Publicidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho Superior -->
+    <header>
+        <div class="site-name">
+            <h1>Nome do Site</h1>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de Edição da Conta -->
+    <section class="editar-conta">
+        <h2>Editar Conta</h2>
+        <form action="salvar_edicao.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" value="João Silva" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" value="joao.silva@example.com" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" value="+55 123 456 789" required>
+
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Site de Publicidade. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

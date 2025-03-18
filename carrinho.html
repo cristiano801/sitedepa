@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Site de Publicidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho Superior -->
+    <header class="top-header">
+        <div class="site-name">
+            <h1>Nome do Site</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button>Buscar</button>
+        </div>
+        <div class="free-shopping">
+            <span>Free Shopping</span>
+        </div>
+        <div class="contact-info">
+            <span>Email: contato@site.com</span>
+            <span>Telefone: +55 123 456 789</span>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav class="main-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Serviços</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Sobre Nós</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="minhaconta.html"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+        </div>
+    </nav>
+
+    <!-- Seção do Carrinho -->
+    <section class="carrinho">
+        <h2>Seu Carrinho</h2>
+        <div class="itens-carrinho">
+            <div class="item">
+                <img src="assets/images/produto1.jpg" alt="Produto 1">
+                <div class="info-item">
+                    <h3>Produto 1</h3>
+                    <p>Empresa A</p>
+                    <p>R$ 100,00</p>
+                    <div class="quantidade">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button class="remover">Remover</button>
+                </div>
+            </div>
+            <!-- Adicione mais itens aqui -->
+        </div>
+        <div class="total">
+            <h3>Total: R$ 100,00</h3>
+            <button class="finalizar-compra">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 Site de Publicidade. Todos os direitos reservados.</p>
+        <p>Contato: <a href="tel:+946419129">+244 946 419 129</a></p>
+    </footer>
+</body>
+</html>
