@@ -175,6 +175,8 @@ a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    width: 150px; /* Tamanho fixo para as imagens */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
 }
 
 .produto h3 {
@@ -285,22 +287,4 @@ a:hover {
 .footer p {
     margin: 5px 0;
     font-size: 0.9rem;
-}
-
-/* Responsividade para Telas Menores */
-@media (max-width: 768px) {
-    .sobre-empresa {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .sobre-conteudo {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .sobre-imagem img {
-        width: 80%;
-        margin: 0 auto;
-    }
 }

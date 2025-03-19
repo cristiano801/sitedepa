@@ -5,7 +5,6 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
-        transition: padding 0.3s ease;
     }
 
     .site-name h1 {
@@ -42,7 +41,7 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
-        transition: all 0.3s ease;
+        background-color: #464646; /* Fundo escuro para o menu mobile */
     }
 
     .nav-links {
@@ -60,11 +59,12 @@
     }
 
     .nav-links li {
-        margin: 5px 0;
+        margin: 10px 0; /* Aumenta o espaçamento entre os itens */
     }
 
     .nav-links li a {
         font-size: 0.9rem; /* Reduz o tamanho do texto */
+        padding: 8px 0; /* Adiciona padding para melhorar o toque */
     }
 
     .nav-icons {
@@ -81,12 +81,13 @@
         display: flex; /* Exibe o botão de menu (hambúrguer) */
         flex-direction: column;
         cursor: pointer;
+        padding: 10px;
     }
 
     .menu-toggle .bar {
         width: 25px;
         height: 3px;
-        background-color: #333;
+        background-color: #ffffff; /* Cor branca para as barras */
         margin: 4px 0;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
@@ -129,6 +130,8 @@
     .produto img {
         max-width: 100%;
         height: auto;
+        width: 120px; /* Reduz o tamanho das imagens */
+        margin-bottom: 10px; /* Espaçamento abaixo da imagem */
     }
 
     .produto h3 {
@@ -166,6 +169,9 @@
 
     .social-media {
         margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px; /* Espaçamento entre ícones */
     }
 
     .social-media a {
